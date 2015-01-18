@@ -3,37 +3,37 @@ isChild: true
 anchor:  mac_setup
 ---
 
-## Mac Setup {#mac_setup_title}
+## Mac Telepítés {#mac_setup_title}
 
-OS X comes prepackaged with PHP but it is normally a little behind the latest stable. Mountain Lion has 5.3.10,
-Mavericks has 5.4.17 and Yosemite has 5.5.9, but with PHP 5.6 out that is often not good enough.
+Az OS X előre csomagolt PHP-val jön, bár ez egy kicsit mindig le van maradva a legutolsó stabil verziótól.
+A Mountain Lion-nak 5.3.10, Mavericks-nek 5.4.17, a Yosemite-nak pedig 5.5.9, de mióta kijött a PHP 5.6, ez nem elég.
 
-There are multiple ways to install PHP on OS X.
+Több megoldás is van, hogyan telepítheted a PHP-t OS X-en.
 
-### Install PHP via Homebrew
+### Telepítsd a PHP-t Homebrew által
 
-[Homebrew] is a powerful package manager for OS X, which can help you install PHP and various extensions easily.
-[Homebrew PHP] is a repository that contains PHP-related "formulae" for Homebrew, and will let you install PHP.
+A [Homebrew] egy erőteljes csomagkezelő OS X-re, ami segíthet neked a PHP és különféle kiegészítőinek telepítésében.
+A [Homebrew PHP] egy lerakat, ami PHP-val kapcsolatos "formulákat" tartalmaz a Homebrew számára, és általa telepítheted a PHP-t.
 
-At this point, you can install `php53`, `php54`, `php55` or `php56` using the `brew install` command, and switch
-between them by modifying your `PATH` variable.
+Ezen a ponton telepítheted a `php53`, `php54`, `php55` vagy a `php56`-ot is a `brew install` paranccsal, és válthatsz 
+köztük a `PATH` változó módosításával.
 
-### Install PHP via phpbrew
+### Telepítsd a PHP-t phpbrew által
 
-[phpbrew] is a tool for installing and managing multiple PHP versions. This can be really useful if two different
-applications/projects require different versions of PHP, and you are not using virtual machines.
+A [phpbrew] egy eszköz a PHP verzióinak telepítéséhez és kezeléséhez. Ez nagyon hasznos tud lenni, ha két különböző
+alkalmazás/projekt igényli az eltérő PHP verziókat, és nem virtuális gépeket használsz.
 
-### Compile from Source
+### Fordítsd forrásból
 
-Another option that gives you control over the version of PHP you install, is to [compile it yourself][mac-compile].
-In that case be sure to have installed either [Xcode][xcode-gcc-substitution] or Apple's substitute
-["Command Line Tools for XCode"] downloadable from Apple's Mac Developer Center.
+Mégegy megoldás, ami irányítást ad a telepített PHP verzió fölött, nem más, mint [fordítsd le magadnak][mac-compile].
+Ebben az esetben győződj meg róla, hogy telepítve van az [Xcode][xcode-gcc-substitution] vagy az Apple pót megoldása, a
+["Command Line Tools for XCode"], ami letölthető az Apple Mac Fejlesztői Központból.
 
-### All-in-One Installers
+### All-in-One telepítők
 
-The solutions listed above mainly handle PHP itself, and do not supply things like Apache, Nginx or a SQL server.
-"All-in-one" solutions such as [MAMP][mamp-downloads] and [XAMPP][xampp] will install these other bits of software for
-you and tie them all together, but ease of setup comes with a trade-off of flexibility.
+A fentebb említett megoldások főleg a PHP-t magát érintik, és nem foglalkoznak olyan dolgokkal, mint az Apache, Nginx
+vagy egy SQL server. Az "All-in-one" megoldások, mint a [MAMP][mamp-downloads] és [XAMPP][xampp] feltelepítenek más 
+szoftvereket is neked, és összekötik azokat. De ez a könnyítés a rugalmasság csökkenésével jár.
 
 
 [Homebrew]: http://brew.sh/

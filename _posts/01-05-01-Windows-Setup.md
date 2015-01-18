@@ -3,21 +3,21 @@ isChild: true
 anchor:  windows_setup
 ---
 
-## Windows Setup {#windows_setup_title}
+## Windows Telepítés {#windows_setup_title}
 
-PHP is available in several ways for Windows. You can [download the binaries][php-downloads] and until recently you
-could use a '.msi' installer. The installer is no longer supported and stops at PHP 5.3.0.
+A PHP többféleképp elérhető a Windowshoz. Például [letöltheted a binárist][php-downloads] és mostanáig használhattad
+a '.msi' telepítőt, ami már nem támogatott, és megállt a PHP 5.3-nál.
 
-For learning and local development you can use the built in webserver with PHP 5.4+ so you don't need to worry about
-configuring it. If you would like an "all-in-one" which includes a full-blown webserver and MySQL too then tools such
-as the [Web Platform Installer][wpi], [XAMPP][xampp], [EasyPHP][easyphp] and [WAMP][wamp] will
-help get a Windows development environment up and running fast. That said, these tools will be a little different from
-production so be careful of environment differences if you are working on Windows and deploying to Linux.
+Tanuláshoz, és helyi fejlesztéshez használhatod a beépített webszervert 5.4 és afölötti PHP-val, így nem kell a 
+konfigurálással foglalkoznod. Ha viszont szeretnél egy "all-in-one"-t, ami tartalmaz egy teljes webszervert és MySQL-t is,
+akkor olyan eszközökre, mint a [Web Platform Installer][wpi], [XAMPP][xampp], [EasyPHP][easyphp] vagy [WAMP][wamp] 
+van szükséged, ami segít, hogy a Windows fejlesztői környezeted működjön, és gyorsan fusson. Ezek viszont kicsit
+másak mint egy éles környezet, szóval vigyázz a különbözőségekre ha Windowson dolgozol és Linuxra készül a szoftvered.
 
-If you need to run your production system on Windows then IIS7 will give you the most stable and best performance. You
-can use [phpmanager][phpmanager] (a GUI plugin for IIS7) to make configuring and managing PHP simple. IIS7 comes with
-FastCGI built in and ready to go, you just need to configure PHP as a handler. For support and additional resources
-there is a [dedicated area on iis.net][php-iis] for PHP.
+Ha az éles rendszert Windowson akarod futtatni, akkor az IIS7 adhatja neked a legstabilabb és legjobb teljesítményt.
+Tudsz használni [phpmanager][phpmanager]-t (grafikus plugin IIS7-hez) a könnyű konfiguráláshoz, kezeléshez. Gyárilag
+van benne FastCGI, neked csak a PHP-t kell konfigurálni mint "handler"-t. Támogatásért, és egyéb forrásokért
+itt egy [dedikált terület az iis.net-en][php-iis] PHP-hoz.
 
 
 [php-downloads]: http://windows.php.net

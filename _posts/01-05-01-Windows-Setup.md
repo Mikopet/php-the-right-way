@@ -16,7 +16,7 @@ másak mint egy éles környezet, szóval vigyázz a különbözőségekre ha Wi
 
 Ha az éles rendszert Windowson akarod futtatni, akkor az IIS7 adhatja neked a legstabilabb és legjobb teljesítményt.
 Tudsz használni [phpmanager][phpmanager]-t (grafikus plugin IIS7-hez) a könnyű konfiguráláshoz, kezeléshez. Gyárilag
-van benne FastCGI, neked csak a PHP-t kell konfigurálni mint "handler"-t. Támogatásért, és egyéb forrásokért
+van benne FastCGI, neked csak a PHP-t kell konfigurálni mint "handler". Támogatásért, és egyéb forrásokért
 itt egy [dedikált terület az iis.net-en][php-iis] PHP-hoz.
 
 

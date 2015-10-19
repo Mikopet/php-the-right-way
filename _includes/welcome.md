@@ -17,26 +17,26 @@ Ez egy naprakész oldal, amit segítőkész információkkal és példákkal fri
 
 _PHP: Helyesen_ már több különböző nyelvre is le lett fordítva:
 
-* [English](http://www.phptherightway.com)
-* [Bulgarian](http://bg.phptherightway.com/)
-* [Chinese (Simplified)](http://wulijun.github.com/php-the-right-way)
-* [Chinese (Traditional)](http://laravel-taiwan.github.io/php-the-right-way)
-* [French](http://eilgin.github.io/php-the-right-way/)
-* [German](http://rwetzlmayr.github.io/php-the-right-way/)
-* [Hungarian](http://hu.phptherightway.com/)
-* [Indonesian](http://id.phptherightway.com/)
-* [Italian](http://it.phptherightway.com/)
-* [Japanese](http://ja.phptherightway.com)
-* [Korean](http://wafe.github.io/php-the-right-way/)
-* [Polish](http://pl.phptherightway.com/)
-* [Portuguese](http://br.phptherightway.com/)
-* [Romanian](https://bgui.github.io/php-the-right-way/)
-* [Russian](http://getjump.github.io/ru-php-the-right-way)
-* [Slovenian](http://sl.phptherightway.com)
-* [Spanish](http://phpdevenezuela.github.io/php-the-right-way/)
+* [Angol](http://www.phptherightway.com)
+* [Bolgár](http://bg.phptherightway.com/)
+* [Kínai (Egyszerűsített)](http://wulijun.github.com/php-the-right-way)
+* [Kínai (Hagyományos)](http://laravel-taiwan.github.io/php-the-right-way)
+* [Francia](http://eilgin.github.io/php-the-right-way/)
+* [Német](http://rwetzlmayr.github.io/php-the-right-way/)
+* [Magyar](http://hu.phptherightway.com/)
+* [Indonéz](http://id.phptherightway.com/)
+* [Olasz](http://it.phptherightway.com/)
+* [Japán](http://ja.phptherightway.com)
+* [Koreai](http://wafe.github.io/php-the-right-way/)
+* [Lengyel](http://pl.phptherightway.com/)
+* [Portugál](http://br.phptherightway.com/)
+* [Román](https://bgui.github.io/php-the-right-way/)
+* [Orosz](http://getjump.github.io/ru-php-the-right-way)
+* [Szlovén](http://sl.phptherightway.com)
+* [Spanyol](http://phpdevenezuela.github.io/php-the-right-way/)
 * [Thai](https://apzentral.github.io/php-the-right-way/)
-* [Turkish](http://hkulekci.github.io/php-the-right-way/)
-* [Ukrainian](http://iflista.github.com/php-the-right-way/)
+* [Török](http://hkulekci.github.io/php-the-right-way/)
+* [Ukrán](http://iflista.github.com/php-the-right-way/)
 
 ## Hogyan vegyek részt?
 
@@ -44,7 +44,8 @@ Segíts, hogy ez a weboldal a legjobb forrása legyen az új PHP programozóknak
 
 ## Beszélj róla!
 
-_PHP: Helyesen_ rendelkezik bannerekkel, amiket a weboldalaidon használhatsz. Fejezd ki támogatásod, és tudasd az új PHP programozókkal merre találnak jó információkat!
+A _PHP: Helyesen_ rendelkezik bannerekkel, amiket a weboldalaidon használhatsz. Fejezd ki támogatásod, és tudasd az új 
+PHP programozókkal merre találnak jó információkat!
 
 [Nézzük a bannereket][2]
 

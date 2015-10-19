@@ -1,55 +1,55 @@
-# Üdvözlet
+# ÃœdvÃ¶zlet
 
-Sok elavult információ van a Weben, ami az új PHP felhasználókat félrevezetheti, 
-emiatt elterjedtek a rossz gyakorlatok és a nem biztonságos kódok. A _PHP: Helyesen_ egy 
-gyors és könnyen olvasható ajánlás a PHP népszerû, bevett gyakorlataihoz, és linkek gyûjteménye 
-megbízható tananyagokhoz a Weben, amikrõl a résztvevõk úgy gondolják a legjobbak jelenleg.
+Sok elavult informÃ¡ciÃ³ van a Weben, ami az Ãºj PHP felhasznÃ¡lÃ³kat fÃ©lrevezetheti, 
+emiatt elterjedtek a rossz gyakorlatok Ã©s a nem biztonsÃ¡gos kÃ³dok. A _PHP: Helyesen_ egy 
+gyors Ã©s kÃ¶nnyen olvashatÃ³ ajÃ¡nlÃ¡s a PHP nÃ©pszerÅ±, bevett gyakorlataihoz, Ã©s linkek gyÅ±jtemÃ©nye 
+megbÃ­zhatÃ³ tananyagokhoz a Weben, amikrÅ‘l a rÃ©sztvevÅ‘k Ãºgy gondoljÃ¡k a legjobbak jelenleg.
 
-_Nincsen általános módja a PHP használatának_. Ez a weboldal azt a célt szolgálja, hogy az új PHP 
-fejlesztõket különbözõ témákba bevezesse, amíg még nem túl késõ, emellett az öreg rókáknak is adjon pár új 
-ötletet azokban a témákban, amelyeket évek óta újragondolás nélkül csinálnak.
-Ez a weboldal nem szabja meg neked milyen eszközöket használj, hanem javaslatokat tesz, és
-amikor lehet, kifejti a különbözõségeket szemléletben és használatban.
+_Nincsen Ã¡ltalÃ¡nos mÃ³dja a PHP hasznÃ¡latÃ¡nak_. Ez a weboldal azt a cÃ©lt szolgÃ¡lja, hogy az Ãºj PHP 
+fejlesztÅ‘ket kÃ¼lÃ¶nbÃ¶zÅ‘ tÃ©mÃ¡kba bevezesse, amÃ­g mÃ©g nem tÃºl kÃ©sÅ‘, emellett az Ã¶reg rÃ³kÃ¡knak is adjon pÃ¡r Ãºj 
+Ã¶tletet azokban a tÃ©mÃ¡kban, amelyeket Ã©vek Ã³ta ÃºjragondolÃ¡s nÃ©lkÃ¼l csinÃ¡lnak.
+Ez a weboldal nem szabja meg neked milyen eszkÃ¶zÃ¶ket hasznÃ¡lj, hanem javaslatokat tesz, Ã©s
+amikor lehet, kifejti a kÃ¼lÃ¶nbÃ¶zÅ‘sÃ©geket szemlÃ©letben Ã©s hasznÃ¡latban.
 
-Ez egy naprakész oldal, amit segítõkész információkkal és példákkal frissítünk, amint azok elérhetõvé válnak.
+Ez egy naprakÃ©sz oldal, amit segÃ­tÅ‘kÃ©sz informÃ¡ciÃ³kkal Ã©s pÃ©ldÃ¡kkal frissÃ­tÃ¼nk, amint azok elÃ©rhetÅ‘vÃ© vÃ¡lnak.
 
-## Fordítások
+## FordÃ­tÃ¡sok
 
-_PHP: Helyesen_ már több különbözõ nyelvre is le lett fordítva:
+_PHP: Helyesen_ mÃ¡r tÃ¶bb kÃ¼lÃ¶nbÃ¶zÅ‘ nyelvre is le lett fordÃ­tva:
 
 * [Angol](http://www.phptherightway.com)
-* [Bolgár](http://bg.phptherightway.com/)
-* [Kínai (Egyszerûsített)](http://laravel-china.github.io/php-the-right-way/)
-* [Kínai (Hagyományos)](http://laravel-taiwan.github.io/php-the-right-way)
+* [BolgÃ¡r](http://bg.phptherightway.com/)
+* [KÃ­nai (EgyszerÅ±sÃ­tett)](http://laravel-china.github.io/php-the-right-way/)
+* [KÃ­nai (HagyomÃ¡nyos)](http://laravel-taiwan.github.io/php-the-right-way)
 * [Francia](http://eilgin.github.io/php-the-right-way/)
-* [Német](http://rwetzlmayr.github.io/php-the-right-way/)
+* [NÃ©met](http://rwetzlmayr.github.io/php-the-right-way/)
 * [Magyar](http://hu.phptherightway.com/)
-* [Indonéz](http://id.phptherightway.com/)
+* [IndonÃ©z](http://id.phptherightway.com/)
 * [Olasz](http://it.phptherightway.com/)
-* [Japán](http://ja.phptherightway.com)
+* [JapÃ¡n](http://ja.phptherightway.com)
 * [Koreai](http://modernpug.github.io/php-the-right-way/)
 * [Perzsa](http://novid.github.io/php-the-right-way/)
 * [Lengyel](http://pl.phptherightway.com/)
-* [Portugál](http://br.phptherightway.com/)
-* [Román](https://bgui.github.io/php-the-right-way/)
+* [PortugÃ¡l](http://br.phptherightway.com/)
+* [RomÃ¡n](https://bgui.github.io/php-the-right-way/)
 * [Orosz](http://getjump.github.io/ru-php-the-right-way)
 * [Szerb](http://phpsrbija.github.io/php-the-right-way/)
-* [Szlovén](http://sl.phptherightway.com)
+* [SzlovÃ©n](http://sl.phptherightway.com)
 * [Spanyol](http://phpdevenezuela.github.io/php-the-right-way/)
 * [Thai](https://apzentral.github.io/php-the-right-way/)
-* [Török](http://hkulekci.github.io/php-the-right-way/)
-* [Ukrán](http://iflista.github.com/php-the-right-way/)
+* [TÃ¶rÃ¶k](http://hkulekci.github.io/php-the-right-way/)
+* [UkrÃ¡n](http://iflista.github.com/php-the-right-way/)
 
-## Hogyan vegyek részt?
+## Hogyan vegyek rÃ©szt?
 
-Segíts, hogy ez a weboldal a legjobb forrása legyen az új PHP programozóknak! [Részt veszek!][1]
+SegÃ­ts, hogy ez a weboldal a legjobb forrÃ¡sa legyen az Ãºj PHP programozÃ³knak! [RÃ©szt veszek!][1]
 
-## Beszélj róla!
+## BeszÃ©lj rÃ³la!
 
-A _PHP: Helyesen_ rendelkezik bannerekkel, amiket a weboldalaidon használhatsz. Fejezd ki támogatásod, és tudasd az új 
-PHP programozókkal merre találnak jó információkat!
+A _PHP: Helyesen_ rendelkezik bannerekkel, amiket a weboldalaidon hasznÃ¡lhatsz. Fejezd ki tÃ¡mogatÃ¡sod, Ã©s tudasd az Ãºj 
+PHP programozÃ³kkal merre talÃ¡lnak jÃ³ informÃ¡ciÃ³kat!
 
-[Nézzük a bannereket][2]
+[NÃ©zzÃ¼k a bannereket][2]
 
 [1]: https://github.com/mikopet/php-the-right-way/tree/gh-pages
 [2]: /banners.html

@@ -5,8 +5,7 @@ anchor:  windows_setup
 
 ## Windows Telepítés {#windows_setup_title}
 
-A PHP többféleképp elérhető a Windowshoz. Például [letöltheted a binárist][php-downloads] és mostanáig használhattad
-a '.msi' telepítőt, ami már nem támogatott, és megállt a PHP 5.3-nál.
+A [windows.php.net/download][php-downloads] címről tudod letölteni a binárist. Kicsomagolás után javasolt a [PATH][windows-path]-ot beállítani a PHP mappád gyökerére (ahol a php.exe is található), így bárhonnan futtatható lesz.
 
 Tanuláshoz, és helyi fejlesztéshez használhatod a beépített webszervert 5.4 és afölötti PHP-val, így nem kell a 
 konfigurálással foglalkoznod. Ha viszont szeretnél egy "all-in-one"-t, ami tartalmaz egy teljes webszervert és MySQL-t is,
@@ -20,7 +19,8 @@ van benne FastCGI, neked csak a PHP-t kell konfigurálni mint "handler". Támoga
 itt egy [dedikált terület az iis.net-en][php-iis] PHP-hoz.
 
 
-[php-downloads]: http://windows.php.net
+[php-downloads]: http://windows.php.net/download/
+[windows-path]: http://www.windows-commandline.com/set-path-command-line/
 [wpi]: http://www.microsoft.com/web/downloads/platform.aspx
 [xampp]: http://www.apachefriends.org/en/xampp.html
 [easyphp]: http://www.easyphp.org/

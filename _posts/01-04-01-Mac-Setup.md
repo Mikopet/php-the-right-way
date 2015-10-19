@@ -17,11 +17,37 @@ A [Homebrew PHP] egy lerakat, ami PHP-val kapcsolatos "formulákat" tartalmaz a 
 
 Ezen a ponton telepítheted a `php53`, `php54`, `php55` vagy a `php56`-ot is a `brew install` paranccsal, és válthatsz 
 köztük a `PATH` változó módosításával.
+Vagy használhatod a [brew-php-switcher][brew-php-switcher]-t, ami automatán vált neked.
+
+### Install PHP via Macports
+
+The [MacPorts] Project is an open-source community initiative to design an
+easy-to-use system for compiling, installing, and upgrading either
+command-line, X11 or Aqua based open-source software on the OS X operating
+system.
+
+MacPorts supports pre-compiled binaries, so you don't need to recompile every
+dependencies from the source tarball files, it saves your life if you don't
+have any package installed on your system.
+
+At this point, you can install `php53`, `php54`, `php55` or `php56` using the `port install` command, for example:
+
+    sudo port install php54
+    sudo port install php55
+
+And you can run `select` command to switch your active php:
+
+    sudo port select --set php php55
 
 ### Telepítsd a PHP-t phpbrew által
 
 A [phpbrew] egy eszköz a PHP verzióinak telepítéséhez és kezeléséhez. Ez nagyon hasznos tud lenni, ha két különböző
 alkalmazás/projekt igényli az eltérő PHP verziókat, és nem virtuális gépeket használsz.
+
+### Install PHP via Liip's binary installer
+
+Another popular option is [php-osx.liip.ch] which provides one liner installation methods for versions 5.3 through 5.6.
+It doesn't overwrite the php binaries installed by Apple, but installs everything in a separate location (/usr/local/php5).
 
 ### Fordítsd forrásból
 
@@ -38,9 +64,12 @@ szoftvereket is neked, és összekötik azokat. De ez a könnyítés a rugalmass
 
 [Homebrew]: http://brew.sh/
 [Homebrew PHP]: https://github.com/Homebrew/homebrew-php#installation
+[MacPorts]: https://www.macports.org/install.php
 [phpbrew]: https://github.com/phpbrew/phpbrew
+[php-osx.liip.ch]: http://php-osx.liip.ch/
 [mac-compile]: http://php.net/install.macosx.compile
 [xcode-gcc-substitution]: https://github.com/kennethreitz/osx-gcc-installer
 ["Command Line Tools for XCode"]: https://developer.apple.com/downloads
 [mamp-downloads]: http://www.mamp.info/en/downloads/
 [xampp]: http://www.apachefriends.org/en/xampp.html
+[brew-php-switcher]: https://github.com/philcook/brew-php-switcher

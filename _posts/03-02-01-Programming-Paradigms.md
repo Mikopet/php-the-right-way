@@ -3,11 +3,9 @@ isChild: true
 anchor:  programming_paradigms
 ---
 
-## Programming Paradigms {#programming_paradigms_title}
+## Programozási paradigmák {#programming_paradigms_title}
 
-PHP is a flexible, dynamic language that supports a variety of programming techniques. It has evolved dramatically over
-the years, notably adding a solid object-oriented model in PHP 5.0 (2004), anonymous functions and namespaces in
-PHP 5.3 (2009), and traits in PHP 5.4 (2012).
+A PHP egy rugalmas, dinamikus nyelv, sokféle programozási technikát támogat. Az évek folyamán nagyon sokat fejlődött, nevezetesen 2004-ben a PHP 5.0-ban megjelent egy stabil object-orientált modell, 2009-ben a PHP 5.3-ban a névtelen függvények és a névterek 2012-ben pedig a PHP 5.4-ben a trait-ek.
 
 ### Object-oriented Programming
 

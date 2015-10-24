@@ -3,26 +3,25 @@ isChild: true
 anchor:  namespaces
 ---
 
-## Namespaces {#namespaces_title}
+## Névterek {#namespaces_title}
 
-As mentioned above, the PHP community has a lot of developers creating lots of code. This means that one library's PHP
-code may use the same class name as another library. When both libraries are used in the same namespace, they collide
-and cause trouble.
+Mint már említettük, a PHP közösség több tagja készít rengeteg kódot. Ez azt jelenti, hogy egy könyvtár PHP
+kódjában talán ugyanaz az osztálynév van használva, mint egy másikban. Ha több könyvtár használja ugyanabban a névtérben, azok ütköznek
+és problémát okoznak.
 
-_Namespaces_ solve this problem. As described in the PHP reference manual, namespaces may be compared to operating
-system directories that _namespace_ files; two files with the same name may co-exist in separate directories. Likewise,
-two PHP classes with the same name may co-exist in separate PHP namespaces. It's as simple as that.
+A _névterek_ megoldják ezt a problémát. Ahogy a PHP referecina kézikönyv írja, a névterek az operációs rendszerek
+könyvtáraihoz hasonlatosak; két fájl ugyanazzal a névvel létezhet külön könyvtárakban. Ugyanígy, két azonos nevű PHP
+osztály létezhet külön névterekben. Ez ilyen egyszerű.
 
-It is important for you to namespace your code so that it may be used by other developers without fear of colliding
-with other libraries.
+Nagyon fontos, hogy úgy alakítsd ki a névtereket a kódodban, hogy azok használhatóak legyenek más fejlesztők által is az ütközés
+veszélye nélkül.
 
-One recommended way to use namespaces is outlined in [PSR-4][psr4], which aims to provide a standard file, class and
-namespace convention to allow plug-and-play code.
+Névterek használatának egy ajánlott útja fel lett vázolva a [PSR-4][psr4]-ben, amelynek célja egy szabványos, fájl, osztály és
+névtér egyezmény létrehozása, mely lehetővé teszi plug-and-play kódok létrehozását.
 
-In October 2014 the PHP-FIG deprecated the previous autoloading standard: [PSR-0][psr0], which has been replaced with
-[PSR-4][psr4]. Currently both are still usable, as PSR-4 requires PHP 5.3 and many PHP 5.2-only projects currently implement
-PSR-0. If you're going to use an autoloader standard for a new application or package then you almost certainly want
-to look into PSR-4.
+2014 októberében a PHP-FIG elavultként jelölte meg az előző autoloading szabványt, a [PSR-0][psr0]-t, amelyet a [PSR-4][psr4] vált fel.
+Jelenleg mindkettő használható, mivel a PSR-4 igényli a PHP 5.3-as verzióját és több, csak PHP 5.2-n futó projekt implementálta
+a PSR-0-t. Ha autolader szabványt szeretnél használni egy új alkalmazásban vagy csomagban, akkor szinte biztosan a PSR-4-et szeretnéd használni.
 
 * [Read about Namespaces][namespaces]
 * [Read about PSR-0][psr0]

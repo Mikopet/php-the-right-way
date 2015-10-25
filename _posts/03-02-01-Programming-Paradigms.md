@@ -9,13 +9,12 @@ A PHP egy rugalmas, dinamikus nyelv, sokféle programozási technikát támogat.
 
 ### Objektum-orientált programozás
 
-A PHP rendelkezik a teljes objektum-orientált programozási jellemzőkkel, többek között támogatja az osztályokat, absztrakt osztályokat,
-interfészeket, öröklést, kivitelezőket (constructor), klónozást, kivételeket, és így tovább.
+A PHP teljes objektum-orientált programozási jellemzőkkel rendelkezik, többek között támogatja az osztályokat, absztrakt osztályokat, interfészeket, öröklést, kivitelezőket (constructor), klónozást, kivételeket, és így tovább.
 
 * [Tanulj meg többet az objektum-orientált PHP-ról][oop]
 * [Tanulj meg többet a Traits-ről][traits]
 
-### Functional Programming
+### Funkcionális programozás
 
 PHP supports first-class functions, meaning that a function can be assigned to a variable. Both user-defined and
 built-in functions can be referenced by a variable and invoked dynamically. Functions can be passed as arguments to

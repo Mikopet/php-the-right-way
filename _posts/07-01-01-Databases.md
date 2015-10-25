@@ -3,15 +3,11 @@ title:  Databases
 anchor: databases
 ---
 
-# Databases {#databases_title}
+# Adatbázisok {#databases_title}
 
-Many times your PHP code will use a database to persist information. You have a few options to connect and interact
-with your database. The recommended option **until PHP 5.1.0** was to use native drivers such as [mysqli], [pgsql],
-[mssql], etc.
+Gyakran fogsz a PHP kódodban adatbázisokat használni az adatok tartós tárolására. Többféle lehetőséged van csatalkozni és műveleteket végezni az adatbázisodon. Az ajánlott lehetőség **PHP 5.1.0 -et követően** a native driver-ek használata volt, mint pl.: [mysqli], [pgsql], [mssql], stb.
 
-Native drivers are great if you are only using _one_ database in your application, but if, for example, you are using
-MySQL and a little bit of MSSQL, or you need to connect to an Oracle database, then you will not be able to use the
-same drivers. You'll need to learn a brand new API for each database &mdash; and that can get silly.
+A native driver-ek nagyszerűek, ha csak _egy_ adatbázist használsz az alkalmazásodban, de, ha például, MySQL-t és egy kis MSSQL-t is használsz, vagy Oracle adatbázishoz kell csatlakoznod, akkor nem használhatod ugyanazt a drivert. Meg kell tanulnod egy teljesen új API-t mindegyik adatbázishoz &mdash; és ez elég nagy ostobaság.
 
 
 [mysqli]: http://php.net/mysqli

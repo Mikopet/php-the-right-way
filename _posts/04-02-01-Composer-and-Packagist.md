@@ -3,143 +3,139 @@ isChild: true
 anchor:  composer_and_packagist
 ---
 
-## Composer and Packagist {#composer_and_packagist_title}
+## Composer és Packagist {#composer_and_packagist_title}
 
-Composer is a **brilliant** dependency manager for PHP. List your project's dependencies in a `composer.json` file and,
-with a few simple commands, Composer will automatically download your project's dependencies and setup autoloading for
-you.
+A Composer egy **zseniális** függőségmenedzser PHP-hez. Sorold fel projekted függőségeit egy `composer.json` fájlban és néhány
+egyszerű parancs használata után a Composer automatikusan letölti őket és beállítja az autoloadert számodra.
 
-There are already a lot of PHP libraries that are compatible with Composer, ready to be used in your project. These
-"packages" are listed on [Packagist], the official repository for Composer-compatible PHP libraries.
+Rengeteg PHP könyvtár létezik amely kompatibilis a Composerrel, készen állva arra, hogy a projektedben használd. Ezeket
+a csomagokat tartalmazza a [Packagist], a hivatalos tároló Composer-kompatibilis PHP könyvtárak számára.
 
-### How to Install Composer
+### Hogyan telepítsd a Composert
 
-You can install Composer locally (in your current working directory) or globally (e.g. /usr/local/bin, recommended).
-Let's assume you want to install Composer globally:
+Telepítheted a Composert lokálisan (a jelenlegi munkakönyvtárban) vagy globálisan (pl. /usr/local/bin, ez az ajánlott).
+Tegyük fel, hogy globálisan szeretnéd telepíteni a Composert:
 
 {% highlight console %}
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 {% endhighlight %}
 
-<strong>Note:</strong> If the above fails due to permissions, run the `mv` line again with `sudo`.
+<strong>Megjegyzés:</strong> Ha a fenti nem működne jogosultságok hiánya miatt, futtasd újra a `mv`-ot `sudo`-val.
 
-This will download `composer.phar` (a PHP binary archive). You can run this with `php` to manage your project
-dependencies.
-<strong>Please Note:</strong> If you pipe downloaded code directly into an interpreter, please read the
-code online first to confirm it is safe.
+Ez letölti a `composer.phar` fájlt (egy PHP bináris archívumot). Ezt futtathatod a `php`-vel a projekted függőségeinek kezeléséhez.
+<strong>Kérlek jegyezd meg:</strong> Ha direkt egy egy interpreterbe töltöd le a kódot, olvasd el előtte a kódot online a biztonság érdekében.
 
-#### Installing on Windows
+#### Telepítés Windows-zon
 
-For Windows users the easiest way to get up and running is to use the [ComposerSetup] installer, which
-performs a global install and sets up your `$PATH` so that you can just call `composer` from any
-directory in your command line.
+Windows felhasználók számára a legegyszerűbb módja hogy telepítsd és futtasd, hogy a [ComposerSetup]-ot használod, ami
+elvégez egy globális telepítést és beállítja a `$PATH` környezeti változód, így bármely könyvtárban csak meg kell hívnod
+a `composer` parancsot egy parancssorban.
 
-### How to Install Composer (manually)
+### Hogyan telepítsd a Composer-t (kézzel)
 
-Manually installing Composer is an advanced technique; however, there are various reasons why a 
-developer might prefer this method vs. using the interactive installation routine. The interactive
-installation checks your PHP installation to ensure that:
+A Composer kézi telepítése egy nehezebb feladat; azonban vannak különböző okok, amiért egy
+fejlesztő talán inkább ezt a módszert választja az interaktív telepítési eljárással szemben.
+Az interaktív telepítés ellenőrzi, hogy a PHP:
 
-- a sufficient version of PHP is being used
-- `.phar` files can be executed correctly
-- certain directory permissions are sufficient
-- certain problematic extensions are not loaded
-- certain `php.ini` settings are set
+- megfelelő verziójú
+- `.phar` fájlokat megfelelően tudja végrehajtani
+- rendelkezik elegendő jogosultsággal bizonyos könyvtárakhoz
+- egyes problémás kiterjesztéseket nem töltött be
+- bizonyos `php.ini` beállításokat tartalmaz
 
-Since a manual installation performs none of these checks, you have to decide whether the trade-off is 
-worth it for you. As such, below is how to obtain Composer manually:
+Mivel a kézi telepítés egyik teljesülését sem ellenőrzi, neked kell eldönted, hogy ez a kompromisszum megéri-e neked.
+Ebben az esetben a következő módon szerezheted be a Composert kézzel:
 
 {% highlight console %}
 curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
 chmod +x $HOME/local/bin/composer
 {% endhighlight %}
 
-The path `$HOME/local/bin` (or a directory of your choice) should be in your `$PATH` environment 
-variable. This will result in a `composer` command being available.
+A `$HOME/local/bin` útvonalnak (vagy általad választott könyvtárnak) be kell kerülnie a `$PATH` környezeti változóba.
+Ez azt eredményezi, hogy a `composer` parancs rendelkezésre áll mindenhol.
 
 When you come across documentation that states to run Composer as `php composer.phar install`, you can
 substitute that with:
+
+Amikor a dokumentációban azzal találkozol, hogy futtasd a Composert a `php composer.phar install` utasítással, azt helyettesítheted a következővel:
 
 {% highlight console %}
 composer install
 {% endhighlight %}
 
-This section will assume you have installed composer globally.
+Ez a szakasz a továbbiakban feltételezi, hogy a composer globálisan elérhető.
 
-### How to Define and Install Dependencies
+### Hogy definiáld és telepítsd a függőségeket
 
-Composer keeps track of your project's dependencies in a file called `composer.json`. You can manage it
-by hand if you like, or use Composer itself. The `composer require` command adds a project dependency 
-and if you don't have a `composer.json` file, one will be created. Here's an example that adds [Twig]
-as a dependency of your project.
+A Composer nyomon követi a projekt függőségeit a `composer.json` fájlban. Ezt kezelheted kézzel ha úgy tetszik,
+vagy használhatod a Composert magát. A `composer require` parancs hozzáad egy függőséget a projekthez és ha nem rendelkezel
+`composer.json` fájllal, létrehozza azt. Íme egy példa, amely hozzáadja a [Twig]-et függőségként a projektedhez.
 
 {% highlight console %}
 composer require twig/twig:~1.8
 {% endhighlight %}
 
-Alternatively the `composer init` command will guide you through creating a full `composer.json` file
-for your project. Either way, once you've created your `composer.json` file you can tell Composer to
-download and install your dependencies into the `vendor/` directory. This also applies to projects 
-you've downloaded that already provide a `composer.json` file:
+Alternatívaként a `composer init` parancs végigvezet téged egy teljes `composer.json` fájl létrehozásán.
+Akárhogy is, ha egyszer már létrehoztad a `composer.json` fájlt, meg tudod mondani a Composernek hogy töltse le és
+telepítse a függőségeket a `vendor/` könyvtárba. Ez vonatkozik a letöltött projektekre is, melyek tartalmaznak
+`composer.json` fájlt:
 
 {% highlight console %}
 composer install
 {% endhighlight %}
 
-Next, add this line to your application's primary PHP file; this will tell PHP to use Composer's 
-autoloader for your project dependencies.
+Ezután adjuk hozzá a következő sort az alkalmazás fő PHP fájljához; ez megmodnja a PHP-nek, hogy használja a Composer
+autoloaderét a projekt függőségeihez.
 
 {% highlight php %}
 <?php
 require 'vendor/autoload.php';
 {% endhighlight %}
 
-Now you can use your project dependencies, and they'll be autoloaded on demand.
+Mostmár használhatod a projekted függőségeit és azok be lesznek töltve, amikor szükség van rájuk.
 
-### Updating your dependencies
+### Függőségek frissítése
 
-Composer creates a file called `composer.lock` which stores the exact version of each package it
-downloaded when you
-first ran `composer install`. If you share your project with other coders and the `composer.lock` file
-is part of your distribution, when they run `composer install` they'll get the same versions as you. 
-To update your dependencies, run `composer update`.
+A Composer létrehoz egy `composer.lock` fájlt, mely tárolja a pontos verzióját minden letöltött csomagnak mikor először
+futtattad a `composer install`-t. Ha más programozókkal dolgozol a projekten és a `composer.lock` fájl része a terjesztésednek,
+mikor futtatják a `composer install`-t, ugyanazt a verziót kapják minden függőségből, mint te.
+Ha módosítani szeretnéd a függőségeket, futtasd a `composer update`-et.
 
-This is most useful when you define your version requirements flexibly. For instance a version 
-requirement of `~1.8` means "anything newer than `1.8.0`, but less than `2.0.x-dev`". You can also use 
-the `*` wildcard as in `1.8.*`. Now Composer's `composer update` command will upgrade all your
-dependencies to the newest version that fits the restrictions you define.
+Ez leginkább akkor hasznos, mikor rugalmasan határozod meg a verzió követelményeket. Például a `~1.8` verzió
+követelmény azt jelenti, hogy "bármi, ami újabb mint `1.8.0`, de kevesebb mint `2.0.x-dev`". Használhatod a
+`*` helyettesítő karaktert is, mint pl. `1.8.*`. Most a Composer `composer update` parancsa frissíteni fogja az összes függőséget
+a legújabb verzióra, amely illeszkedik a megadott korlátozásokra.
 
-### Update Notifications
+### Frissítési értesésítések
 
-To receive notifications about new version releases you can sign up for [VersionEye], a web service
-that can monitor your GitHub and BitBucket accounts for `composer.json` files and send emails with new
-package releases.
+Ahhoz, hogy kapj értesítést az új verziókról, iratkozz fel a [VersionEye]-re, amely egy olyan internetes szolgáltatás,
+mely figyeli a GitHub és BitBucket accountod `composer.json` fájljait és egy e-mailt küld az új csomag verziókkal.
 
-### Checking your dependencies for security issues
+### A függőségek biztonsági kockázatának ellenőrzése
 
-The [Security Advisories Checker] is a web service and a command-line tool, both will examine your `composer.lock`
-file and tell you if you need to update any of your dependencies.
+A [Security Advisories Checker] egy webes szolgáltatás és parancssori eszköz, mely megvizsgálja a `composer.lock` fájlodat és jelzi, ha frissíteni
+kell a függőségeket.
 
-### Handling global dependencies with Composer
+### Globális függőségek kezelése Composerrel
 
-Composer can also handle global dependencies and their binaries. Usage is straight-forward, all you need
-to do is prefix your command with `global`. If per example you wanted to install PHPUnit and have it 
-available globally, you'd run the following command:
+Composer tud kezelni globális függőségeket és binárisokat is. Használata egyszerű, csak annyit kell tenned, hogy
+egy `global` prefixet használsz a parancsoknál. Ha például a PHPUnitot szeretnéd telepíteni és azt globálisan
+elérhetővé tenni, az alábbi paranccsal teheted meg:
 
 {% highlight console %}
 composer global require phpunit/phpunit
 {% endhighlight %}
 
-This will create a `~/.composer` folder where your global dependencies reside. To have the installed
-packages' binaries available everywhere, you'd then add the `~/.composer/vendor/bin` folder to your 
-`$PATH` variable.
+Ez létrehoz egy `~/.composer` könyvtárat, ahol a globális függőségek laknak. Ahhoz, hogy a telepített
+csomagok binárisai mindenhol elérhetőek legyenek, hozzáadhatjuk a `~/.composer/vendor/bin` könyvtárat
+a `$PATH` változóhoz.
 
-* [Learn about Composer]
+* [Tanulj többet a Composer-ről]
 
 [Packagist]: http://packagist.org/
 [Twig]: http://twig.sensiolabs.org
 [VersionEye]: https://www.versioneye.com/
 [Security Advisories Checker]: https://security.sensiolabs.org/
-[Learn about Composer]: http://getcomposer.org/doc/00-intro.md
+[Tanulj többet a Composer-ről]: http://getcomposer.org/doc/00-intro.md
 [ComposerSetup]: https://getcomposer.org/Composer-Setup.exe

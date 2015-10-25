@@ -6,7 +6,7 @@ anchor:  standard_php_library
 
 ## Szabványos PHP Könyvtár {#standard_php_library_title}
 
-A Szabványos PHP Könyvtár (Standard PHP Library - SPL) a PHP része és biztosítja osztályok és intergészek gyűjteményét.
+A Szabványos PHP Könyvtár (Standard PHP Library - SPL) a PHP része és biztosítja osztályok és interfészek gyűjteményét.
 Ez elsősorban az általánosan használt adatstruktúra osztályokat (halmaz (stack), sor (queue), kupac (heap) és így tovább) és bejárókat (iterator),
 amelyek bejárják ezeket az adatstruktúrákat vagy saját SPL interfészt megvalósító osztályokat.
 

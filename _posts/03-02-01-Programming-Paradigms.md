@@ -7,13 +7,13 @@ anchor:  programming_paradigms
 
 A PHP egy rugalmas, dinamikus nyelv, sokféle programozási technikát támogat. Az évek folyamán nagyon sokat fejlődött, nevezetesen 2004-ben a PHP 5.0-ban megjelent egy stabil object-orientált modell, 2009-ben a PHP 5.3-ban a névtelen függvények és a névterek 2012-ben pedig a PHP 5.4-ben a trait-ek.
 
-### Object-oriented Programming
+### Objektum-orientált programozás
 
-PHP has a very complete set of object-oriented programming features including support for classes, abstract classes,
-interfaces, inheritance, constructors, cloning, exceptions, and more.
+A PHP rendelkezik a teljes objektum-orientált programozási jellemzőkkel, többek között támogatja az osztályokat, absztrakt osztályokat,
+interfészeket, öröklést, kivitelezőket (constructor), klónozást, kivételeket, és így tovább.
 
-* [Read about Object-oriented PHP][oop]
-* [Read about Traits][traits]
+* [Tanulj meg többet az objektum-orientált PHP-ról][oop]
+* [Tanulj meg többet a Traits-ről][traits]
 
 ### Functional Programming
 

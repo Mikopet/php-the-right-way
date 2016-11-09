@@ -1,30 +1,34 @@
 ---
+title:   Composer és Packagist
 isChild: true
 anchor:  composer_and_packagist
 ---
 
 ## Composer és Packagist {#composer_and_packagist_title}
 
-A Composer egy **zseniális** függőségmenedzser PHP-hez. Sorold fel projekted függőségeit egy `composer.json` fájlban és néhány
-egyszerű parancs használata után a Composer automatikusan letölti őket és beállítja az autoloadert számodra.
+A Composer egy **zseniális** függőségmenedzser PHP-hez. Sorold fel projekted függőségeit egy `composer.json` fájlban 
+és néhány egyszerű parancs használata után a Composer automatikusan letölti őket és beállítja az autoloadert számodra. 
+A composer hasonlít az NPM-hez a node.js világban, vagy a Bundler-hez a Ruby világban.
 
 Rengeteg PHP könyvtár létezik amely kompatibilis a Composerrel, készen állva arra, hogy a projektedben használd. Ezeket
 a csomagokat tartalmazza a [Packagist], a hivatalos tároló Composer-kompatibilis PHP könyvtárak számára.
 
 ### Hogyan telepítsd a Composert
 
-Telepítheted a Composert lokálisan (a jelenlegi munkakönyvtárban) vagy globálisan (pl. /usr/local/bin, ez az ajánlott).
+A legbiztonságosabb módja a Composer letöltésének a [hivatalos iránymutatás követése](https://getcomposer.org/download/).
+Ez hitelesíti, hogy a telepítő nem korrupt, vagy befolyásolt.
+A telepítő *lokálisan* telepíti a Composert, az éppen aktuális munkakönyvtáradba.
+
+Mi a *globális* telepítést ajálnjuk (pl. egy egyszerű másolat a /usr/local/bin -be) - ehhez futtasd ezeket:
 Tegyük fel, hogy globálisan szeretnéd telepíteni a Composert:
 
 {% highlight console %}
-curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 {% endhighlight %}
 
-<strong>Megjegyzés:</strong> Ha a fenti nem működne jogosultságok hiánya miatt, futtasd újra a `mv`-ot `sudo`-val.
+**Megjegyzés:** Ha a fentiek jogosultság miatt sikertelenek, szúrd elé a `sudo`-t.
 
-Ez letölti a `composer.phar` fájlt (egy PHP bináris archívumot). Ezt futtathatod a `php`-vel a projekted függőségeinek kezeléséhez.
-<strong>Kérlek jegyezd meg:</strong> Ha direkt egy egy interpreterbe töltöd le a kódot, olvasd el előtte a kódot online a biztonság érdekében.
+Ahhoz, hogy lokálisan futtasd a Composer, használd a `php composer.phar` parancsot, vagy globálisan a `composer`-t.
 
 #### Telepítés Windows-zon
 
@@ -97,10 +101,12 @@ Mostmár használhatod a projekted függőségeit és azok be lesznek töltve, a
 
 ### Függőségek frissítése
 
-A Composer létrehoz egy `composer.lock` fájlt, mely tárolja a pontos verzióját minden letöltött csomagnak mikor először
-futtattad a `composer install`-t. Ha más programozókkal dolgozol a projekten és a `composer.lock` fájl része a terjesztésednek,
-mikor futtatják a `composer install`-t, ugyanazt a verziót kapják minden függőségből, mint te.
-Ha módosítani szeretnéd a függőségeket, futtasd a `composer update`-et.
+A Composer létrehoz egy `composer.lock` fájlt, mely tárolja a pontos verzióját minden letöltött csomagnak mikor 
+először futtattad a `composer install`-t. Ha mássokkal is megosztod a projekted, bizonyosodj meg róla, hogy a 
+`composer.lock` fájl része a terjesztésednek, így mikor futtatják a `composer install`-t, ugyanazt a verziót kapják 
+minden függőségből, mint te. A függőségek frissítéséhez futtasd a `composer update`-et.
+Ne használj `composer update`-t élesítéskor, csakis `composer install`-t, egyébként különböző csomagverziókhoz 
+jutsz éles környezetben.
 
 Ez leginkább akkor hasznos, mikor rugalmasan határozod meg a verzió követelményeket. Például a `~1.8` verzió
 követelmény azt jelenti, hogy "bármi, ami újabb mint `1.8.0`, de kevesebb mint `2.0.x-dev`". Használhatod a
@@ -119,7 +125,7 @@ kell a függőségeket.
 
 ### Globális függőségek kezelése Composerrel
 
-Composer tud kezelni globális függőségeket és binárisokat is. Használata egyszerű, csak annyit kell tenned, hogy
+A Composer globális függőségeket és binárisokat is tud kezelni. Használata egyszerű, csak annyit kell tenned, hogy
 egy `global` prefixet használsz a parancsoknál. Ha például a PHPUnitot szeretnéd telepíteni és azt globálisan
 elérhetővé tenni, az alábbi paranccsal teheted meg:
 

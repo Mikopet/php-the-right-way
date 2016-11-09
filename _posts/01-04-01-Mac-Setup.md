@@ -6,7 +6,8 @@ anchor:  mac_setup
 ## Mac Telepítés {#mac_setup_title}
 
 Az OS X előre csomagolt PHP-val jön, bár ez egy kicsit mindig le van maradva a legutolsó stabil verziótól.
-A Mountain Lion-nak 5.3.10, Mavericks-nek 5.4.17, a Yosemite-nak pedig 5.5.9, de mióta kijött a PHP 5.6, ez nem elég.
+A Mavericks-nek 5.4.17, a Yosemite-nak 5.5.9, az El Capitan-nak 5.5.29, a Sierra-nak pedig 5.6.24, de mióta kijött a 
+PHP 7.0, ez gyakran nem elég jó.
 
 Több megoldás is van, hogyan telepítheted a PHP-t OS X-en.
 
@@ -15,8 +16,8 @@ Több megoldás is van, hogyan telepítheted a PHP-t OS X-en.
 A [Homebrew] egy erőteljes csomagkezelő OS X-re, ami segíthet neked a PHP és különféle kiegészítőinek telepítésében.
 A [Homebrew PHP] egy lerakat, ami PHP-val kapcsolatos "formulákat" tartalmaz a Homebrew számára, és általa telepítheted a PHP-t.
 
-Ezen a ponton telepítheted a `php53`, `php54`, `php55` vagy a `php56`-ot is a `brew install` paranccsal, és válthatsz 
-köztük a `PATH` változó módosításával.
+Ezen a ponton telepítheted a `php53`, `php54`, `php55`, `php56` vagy a `php70`-ot is a `brew install` paranccsal, 
+és válthatsz  köztük a `PATH` változó módosításával.
 Vagy használhatod a [brew-php-switcher][brew-php-switcher]-t, ami automatán vált neked.
 
 ### Install PHP via Macports
@@ -30,14 +31,14 @@ MacPorts supports pre-compiled binaries, so you don't need to recompile every
 dependencies from the source tarball files, it saves your life if you don't
 have any package installed on your system.
 
-At this point, you can install `php53`, `php54`, `php55` or `php56` using the `port install` command, for example:
+At this point, you can install `php54`, `php55`, `php56` or `php70` using the `port install` command, for example:
 
-    sudo port install php54
-    sudo port install php55
+    sudo port install php56
+    sudo port install php70
 
 And you can run `select` command to switch your active php:
 
-    sudo port select --set php php55
+    sudo port select --set php php70
 
 ### Telepítsd a PHP-t phpbrew által
 
@@ -46,7 +47,7 @@ alkalmazás/projekt igényli az eltérő PHP verziókat, és nem virtuális gép
 
 ### Install PHP via Liip's binary installer
 
-Another popular option is [php-osx.liip.ch] which provides one liner installation methods for versions 5.3 through 5.6.
+Another popular option is [php-osx.liip.ch] which provides one liner installation methods for versions 5.3 through 7.0.
 It doesn't overwrite the php binaries installed by Apple, but installs everything in a separate location (/usr/local/php5).
 
 ### Fordítsd forrásból

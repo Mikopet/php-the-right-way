@@ -9,9 +9,9 @@ várhatóan ezek közül többet is fel fog használni - ezek a projekt függős
 nem volt egy jó módja a függőségek kezelésére. Még ha sikerült is kézzel menedzselni őket, akkor is aggódni kellett
 az autoloaderek miatt. Ez már nem probléma.
 
-Jelenleg két fő csomagkezelő rendszer létezik PHP-hez - [Composer] és [PEAR]. Composer a fő csomagkezelő a PHP-ben,
-azonban sokáig a PEAR-t használták ennek a szerepnek a betöltésére. A PEAR ismerete hasznos lehet számodra, segítségével
-találhatsz olyan referenciákat, melyekről még nem is hallottál.
+Jelenleg két fő csomagkezelő rendszer létezik PHP-hez - [Composer] és [PEAR]. Jelenleg a composer a legnépszerűbb a 
+PHP-ban, azonban sokáig a PEAR-t használták ennek a szerepnek a betöltésére. A PEAR ismerete hasznos lehet számodra, 
+segítségével találhatsz olyan referenciákat, melyekről még nem is hallottál.
 
 [Composer]: /#composer_and_packagist
 [PEAR]: /#pear

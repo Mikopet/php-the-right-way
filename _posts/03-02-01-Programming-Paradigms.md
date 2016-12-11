@@ -5,7 +5,7 @@ anchor:  programming_paradigms
 
 ## Programozási paradigmák {#programming_paradigms_title}
 
-A PHP egy rugalmas, dinamikus nyelv, sokféle programozási technikát támogat. Az évek folyamán nagyon sokat fejlődött, nevezetesen 2004-ben a PHP 5.0-ban megjelent egy stabil object-orientált modell, 2009-ben a PHP 5.3-ban a névtelen függvények és a névterek 2012-ben pedig a PHP 5.4-ben a trait-ek.
+A PHP egy rugalmas, dinamikus nyelv, sokféle programozási technikát támogat. Az évek folyamán nagyon sokat fejlődött, nevezetesen 2004-ben a PHP 5.0-ban megjelent egy stabil objektum-orientált modell, 2009-ben a PHP 5.3-ban a névtelen függvények és a névterek 2012-ben pedig a PHP 5.4-ben a trait-ek.
 
 ### Objektum-orientált programozás
 
@@ -16,35 +16,29 @@ A PHP teljes objektum-orientált programozási jellemzőkkel rendelkezik, többe
 
 ### Funkcionális programozás
 
-PHP supports first-class functions, meaning that a function can be assigned to a variable. Both user-defined and
-built-in functions can be referenced by a variable and invoked dynamically. Functions can be passed as arguments to
-other functions (a feature called _Higher-order Functions_) and functions can return other functions.
+A PHP támogatja a first-class függvényeket, amelyek olyan függvények amiket hozzárendelhetünk egy változóhoz. A felhasználó által meghatározott és a beépített függvények is lehetnek referenciaként letárolva egy változóban és hivatkozhatunk rájuk dinamikusan.
+Függvények átathatóak paraméterként más függvényeknek (ezt _Higher-order Functions_-nek hívják), illetbe függvények visszaadhatnak függvényt végeredményül.
 
-Recursion, a feature that allows a function to call itself, is supported by the language, but most PHP code
-is focused on iteration.
+A rekurzió egy funkció ami megengedi a függvényeknek, hogy meghívják önmagukat, ez támogatott PHP-ban is habár a legtöbb PHP kód a folytonosságra fókuszál.
 
-New anonymous functions (with support for closures) are present since PHP 5.3 (2009).
+Az új névtelen függvények (closures támogatással) az 5.3-as (2009) verzióban jelentek meg.
 
-PHP 5.4 added the ability to bind closures to an object's scope and also improved support for callables such that they
-can be used interchangeably with anonymous functions in almost all cases.
+A PHP 5.4 lehetőséget adott a bind closures használatára objektum hatáskörön, illetve fejlesztette a callables támogatottságát, hogy szinonímaként használhassuk névtelen függvényeknél minden esetben.
 
-* Continue reading on [Functional Programming in PHP](/pages/Functional-Programming.html)
-* [Read about Anonymous Functions][anonymous-functions]
-* [Read about the Closure class][closure-class]
-* [More details in the Closures RFC][closures-rfc]
-* [Read about Callables][callables]
-* [Read about dynamically invoking functions with `call_user_func_array()`][call-user-func-array]
+* Olvass többet a [Funkcionális programozásról PHP-ban](/pages/Functional-Programming.html)
+* [Olvass a névtelen függvényekről][anonymous-functions]
+* [Olvass a Closure osztályról][closure-class]
+* [Részletesen a Closure-ről az RFC-ben][closures-rfc]
+* [Olvass a Callables-ről][callables]
+* [Olvass a dinamikus függvényhívásról a `call_user_func_array()`-el][call-user-func-array]
 
-### Meta Programming
+### Meta programozás
 
-PHP supports various forms of meta-programming through mechanisms like the Reflection API and Magic Methods. There are
-many Magic Methods available like `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()`, etc. that allow
-developers to hook into class behavior. Ruby developers often say that PHP is lacking `method_missing`, but it is
-available as `__call()` and `__callStatic()`.
+A PHP támogatja a meta programozás különféle fajtáit a Reflection API-tól a Magic metódusokig. Eg nagy halom Magic metódus elérhető a PHP-ban mint a `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()`, stb. amelyekkel befolyásolhatjuk egy osztály viselkedését. A Ruby fejlesztők gyarkan hiányolják a `method_missing`-et, de elérhető változatai a `__call()` és `__callStatic()`.
 
-* [Read about Magic Methods][magic-methods]
-* [Read about Reflection][reflection]
-* [Read about Overloading][overloading]
+* [Olvass többet a Magic metódusokról][magic-methods]
+* [ROlvas többet a Reflection-ről][reflection]
+* [Olvass többet az Overloading-ról][overloading]
 
 
 [oop]: http://php.net/language.oop5
@@ -57,4 +51,3 @@ available as `__call()` and `__callStatic()`.
 [magic-methods]: http://php.net/language.oop5.magic
 [reflection]: http://php.net/intro.reflection
 [overloading]: http://php.net/language.oop5.overloading
-

@@ -2,59 +2,53 @@
 anchor: code_style_guide
 ---
 
-# Code Style Guide {#code_style_guide_title}
+# Kódolási stílus {#code_style_guide_title}
 
-The PHP community is large and diverse, composed of innumerable libraries, frameworks, and components. It is common for
-PHP developers to choose several of these and combine them into a single project. It is important that PHP code adhere
-(as close as possible) to a common code style to make it easy for developers to mix and match various libraries for
-their projects.
+A PHP közösség nagy én különböző, számtalan könyvtárból, keretrendszerből és komponensből áll. A fejlesztők válogathatnak
+ezekből és tetszés szerint felhasználhatják saját projektjeikben. Fontos, hogy a PHP kód ragaszkodik bizonyos kódolási stílushoz
+ami könnyebbé teszi más fejlesztők számára annak értelmezését és fel könnyen fel tudják használni saját projektjeikben.
 
-The [Framework Interop Group][fig] has proposed and approved a series of style recommendations. Not all of them related
-to code-style, but those that do are [PSR-0][psr0], [PSR-1][psr1], [PSR-2][psr2] and [PSR-4][psr4]. These
-recommendations are merely a set of rules that many projects like Drupal, Zend, Symfony, Laravel, CakePHP, phpBB, AWS SDK,
-FuelPHP, Lithium, etc are adopting. You can use them for your own projects, or continue to use your own
-personal style.
+A [Framework Interop Group][fig] javasolt és elfogadott egy sorozat ajánlást ami nem csak a kódolási stílusra tér ki. Ezek a
+[PSR-0][psr0], [PSR-1][psr1], [PSR-2][psr2] és [PSR-4][psr4]. Ezek az ajánlások tulajdonképpen meghatározott szabályok amit
+a legtöbb projekt mint Drupal, Zend, Symfony, Laravel, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium, stb. elfogadtak. Használhatod
+őket saját projektjeidben mint egy kódolási szabvány vagy folytathatod a saját stílusod.
 
-Ideally you should write PHP code that adheres to a known standard. This could be any combination of PSRs, or one
-of the coding standards made by PEAR or Zend. This means other developers can easily read and work with your code, and
-applications that implement the components can have consistency even when working with lots of third-party code.
+Érdemes úgy kódolnod PHP-ban, hogy az valamilyen ismert szabványt kövessen. Ez lehet akármilyen kombinációja a PSR-nak, vagy
+hasnálhatod a PEAR vagy Zend által kiadottakat. Ez azt eredményezi, hogy más fejlesztők könnyedén értelmezik az általad kiadott kódot és az alkalmazások esetén következetességet biztosít különböző komponensek között amikor sok harmadik féltől származó kóddal dolgozunk.
 
-* [Read about PSR-0][psr0]
-* [Read about PSR-1][psr1]
-* [Read about PSR-2][psr2]
-* [Read about PSR-4][psr4]
-* [Read about PEAR Coding Standards][pear-cs]
-* [Read about Symfony Coding Standards][symfony-cs]
 
-You can use [PHP_CodeSniffer][phpcs] to check code against any one of these recommendations, and plugins for text
-editors like [Sublime Text][st-cs] to be given real-time feedback.
+* [Olvass a PSR-0-ról][psr0]
+* [Olvass a PSR-1-ről][psr1]
+* [Olvass a PSR-2-ről][psr2]
+* [Olvass a PSR-4-ről][psr4]
+* [Olvass a PEAR Coding Standards-ről][pear-cs]
+* [Olvass a Symfony Coding Standards-ről][symfony-cs]
 
-You can fix the code layout automatically by using one of the following tools:
+Használhatsz [PHP_CodeSniffer][phpcs]-t hogy ellenőrizd a kódod meg felel-e a valamilyen kódolási szabványnak, és kiegészítéseket szerkesztőkhöz mint a [Sublime Text][st-cs] hogy valós visszajelzést kapj.
 
-- One is the [PHP Coding Standards Fixer][phpcsfixer] which has a very well tested codebase.
-- Also, the [PHP Code Beautifier and Fixer][phpcbf] tool which is included with PHP_CodeSniffer can be used to adjust your code accordingly.
+A következő eszközökkel automatikusan javíthatod a kódodat:
 
-And you can run phpcs manually from shell:
+- Van a [PHP Coding Standards Fixer][phpcsfixer], aminek van egy nagyon jól tesztelt kódbázisa,
+- Vagy a [PHP Code Beautifier and Fixer][phpcbf], amit alapból tartalmaz a PHP_CodeSniffer, hogy javítsa a kódot eszerint.
+
+Illetve parancssorból futtathatod a phpcs parancsot:
 
     phpcs -sw --standard=PSR2 file.php
 
-It will show errors and describe how to fix them.
-It can also be helpful to include this command in a git hook.
-That way, branches which contain violations against the chosen standard cannot enter the repository until those
-violations have been fixed.
+Megmutatja a hibákat és részletezi hogyan javíthatod meg.
+Ez a parancs akkor is jó lehet, ha együtt használjuk egy git hook-al, ugyanis bizonyos branch-okba a kód addig nem kerül bele ameddig az általa jelzet hibák ki nem lesznek javítva.
 
-If you have PHP_CodeSniffer, then you can fix the code layout problems reported by it, automatically, with the
+Ha van PHP_CodeSniffer, akkor egy újabb paranccsal javíthatod őket amikor jelentésre kerülnek:
 [PHP Code Beautifier and Fixer][phpcbf].
 
     phpcbf -w --standard=PSR2 file.php
 
-Another option is to use the [PHP Coding Standards Fixer][phpcsfixer].
-It will show which kind of errors the code structure had before it fixed them.
+Egy másik opció a [PHP Coding Standards Fixer][phpcsfixer].
+Ez Megmutatja milyen hibák vannak a kód struktúrájában mielőtt javítja őket.
 
     php-cs-fixer fix -v --level=psr2 file.php
 
-English is preferred for all symbol names and code infrastructure. Comments may be written in any language easily
-readable by all current and future parties who may be working on the codebase.
+Az angol nyelv az előnyben részesített a szinbólumok elnevezésére. Kommentek írhatok egyéb nyelveken figyelembe véve azt, hogy kik fogják illetve kik akarják azt olvasni.
 
 
 [fig]: http://www.php-fig.org/
